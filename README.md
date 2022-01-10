@@ -10,13 +10,18 @@ Shop Local
 
 ## Project Description
 The website will be a fully functioning application that small business users can use to get their local clientele. You can shop for items by locality to support business in your area.
-# Wireframs
+# Wireframes
+
+[Web and phone wireframes](https://whimsical.com/embed/RF9JXK8ijDB1W8hCSg9HHo)
 
 # Component Hiearchy
 
+[Component Hierarchy](https://whimsical.com/embed/4z97aRDUVTJ4VG2fuhFmPt)
+
+
 ## Air Table Api
 
-https://airtable.com/appMaXhDVdlIdtk6z/api/docs
+[Airtable](https://airtable.com/appMaXhDVdlIdtk6z/api/docs)
 
 API snipet 
 ```https://api.airtable.com/v0/appMaXhDVdlIdtk6z/clothing```
@@ -52,10 +57,6 @@ API snipet
 |Jan 16| Addtional features (included in changes section) | incomplete
 |Jan 17| MVP | incomplete
 |Jan 18| Presentations | incomplete
-
-## Priority Matrix
-
-![Priority Matrix](https://res.cloudinary.com/dnv6i44dp/image/upload/v1639368115/Priority_Matrix_toqoqy.png)
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
@@ -79,3 +80,8 @@ API snipet
 <!-- CODE SNIPPET I'M PROUD OF -->
 
 ## SWOT
+
+S - strengths being able to style the webpage effectively to make a good user experience
+W - getting geolocalization to be able to fully ultilize the app
+O - be able to have real-life practicality eventually
+T - Not being able to make an air table that is inclusive enough
