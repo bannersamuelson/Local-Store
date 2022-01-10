@@ -27,30 +27,31 @@ API snipet
 
 ### MVP
 
-- Be able to search a database for games
-- A list of games will populate based on the search including title/release date and img
-- A "my games" will be added for you to save favorite games
-- A "home" tab will revert back to the home screen / clicking on logo
-- phone screens will be functional.
+- Different local areas will be populated
+- List of clothing items per area
+- a details page for each clothing item
+- a add to cart feature for each item
+- checkout page
 
 #### PostMVP  
 
-- update favorites screen
-- add heart color after click
-- add carousel to now trending
-- have random games be able to be displayed
-- have full screen pages on game clicked ("show more")
+- figure out how to use actual gps data
+- add a search by area code feature
+- add different sections that are searchable by
+- about us for each business section
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Dec 10-12| Prompt / Wireframes / Priority Matrix / Timeframes | Copmlete
-|Dec 13| Project Approval/ create webppage/phone structure | Complete
-|Dec 13| Core Application Structure (HTML, CSS, etc.) | Complete
-|Dec 14| Pseudocode / actual codeCore| Complete
-|Dec 15| Initial Clickable Model  | Complete
-|Dec 16| MVP | Complete
-|Dec 17| Presentations | Complete
+|Jan 9-10| Prompt / Wireframes / Priority Matrix / Timeframes | incomplete
+|Jan 11| Project Approval/ create webppage/phone structure | incomplete
+|Jan 12| Core Application Structure (HTML, CSS, etc.) | incomplete
+|Jan 13| Pseudocode / actual codeCore| incomplete
+|Jan 14| Initial Clickable Model  | incomplete
+|Jan 15| Revamping CSS / Tailwind CSS philosophy | incomplete
+|Jan 16| Addtional features (included in changes section) | incomplete
+|Jan 17| MVP | incomplete
+|Jan 18| Presentations | incomplete
 
 ## Priority Matrix
 
