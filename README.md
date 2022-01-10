@@ -64,7 +64,7 @@ API snipet
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested |
-| --- | :---: |  :---: | git a:---: |
+| --- | :---: |  :---: | :---: |
 | Working with Airtable | H | 3 hrs| -- |
 | Adding HTML and tailwind CSS for stying | M | 3 hrs | -- |
 | Nav bar | L | 1 hrs | -- |
