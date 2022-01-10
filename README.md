@@ -2,8 +2,12 @@
 
 Title Shop Local
 
-# Project Overview
-I am going to create a website application that sells small business clothing items
+# Description
+I am going to create a website application that sells small business clothing items.
+You will be able to shop by store / or by clothing item
+Owners will be able to request item updates
+Simple design to encourage supporting local businesses.
+
 
 # Title
 Shop Local
@@ -59,23 +63,22 @@ API snipet
 |Jan 18| Presentations | incomplete
 ## Timeframes
 
-| Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Working with API | H | 1 hrs| 3 hrs| 3 hrs|
-| Adding HTML and CSS for stying | L | 2 hrs | 10 hrs | 10 hrs |
-| Nav bar and flex display | H | 1.5 hrs | 5 hrs | 5 hrs|
-| Search bar input JS | H| 3 hrs | 3 hrs | 3 hrs |
-| Display item information | H | 3 hrs | 3 hrs | 3 hrs
-| Page scroll functionality | L | 1.5 hrs | 1.5 hrs | 1.5 hrs |
-| CSS Styling| M | 2 hrs | 2 hrs | 2 hrs |
-| User feedback display | M | 3 hrs | 3 hrs | 3hrs |
-| API functionality | H| 3 hrs | 3 hrs | 3 hrs |
-| JavaScript "my library" | M | 3 hrs | 1.5 hrs | 1.5 hrs |
-| JavaScript "my favorites" | M | 3 hrs | 3 hrs | 3 hrs |
-| Media Query Styling | H | 3 hrs| .5 hrs | .5 hrs
-| Background imaging | L | 2 hrs | 2 hrs | 2 hrs |
-| Debugging | M | 3 hours | 3 hrs | 3 hrs |
-| Total | H | 33.5 hours | 43.5 hrs | 43.5 hrs |
+| Component | Priority | Estimated Time | Time Invested |
+| --- | :---: |  :---: | :---: |
+| Working with Airtable | H | 1 hrs| 3 hrs| -- |
+| Adding HTML and tailwind CSS for stying | M | 3 hrs | -- |
+| Nav bar | L | 1 hrs | -- |
+| Search bar input JS | M | 3 hrs | -- |
+| Display item information | M | 3 hrs | -- |
+| Page scroll functionality | L | 1.5 hrs | -- |
+| CSS Detail Page Styling| M | 2 hrs | -- |
+| User zipcode display | H | 3 hrs | -- |
+| store list | M | 3 hrs | 1.5 hrs | 1.5 hrs |
+| clothing list| M | 3 hrs | -- |
+| Media Query Styling | H | 3 hrs| -- |
+| Background imaging | L | 2 hrs | -- |
+| Debugging | M | 3 hours | -- |
+| react styling components | H | 3 hrs | -- |
 
 <!-- CODE SNIPPET I'M PROUD OF -->
 
