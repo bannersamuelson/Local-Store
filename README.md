@@ -64,8 +64,8 @@ API snipet
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested |
-| --- | :---: |  :---: | :---: |
-| Working with Airtable | H | 1 hrs| 3 hrs| -- |
+| --- | :---: |  :---: | git a:---: |
+| Working with Airtable | H | 3 hrs| -- |
 | Adding HTML and tailwind CSS for stying | M | 3 hrs | -- |
 | Nav bar | L | 1 hrs | -- |
 | Search bar input JS | M | 3 hrs | -- |
@@ -73,12 +73,13 @@ API snipet
 | Page scroll functionality | L | 1.5 hrs | -- |
 | CSS Detail Page Styling| M | 2 hrs | -- |
 | User zipcode display | H | 3 hrs | -- |
-| store list | M | 3 hrs | 1.5 hrs | 1.5 hrs |
+| store list | M | 3 hrs | -- |
 | clothing list| M | 3 hrs | -- |
 | Media Query Styling | H | 3 hrs| -- |
 | Background imaging | L | 2 hrs | -- |
 | Debugging | M | 3 hours | -- |
 | react styling components | H | 3 hrs | -- |
+| Total | 38 | -- |
 
 <!-- CODE SNIPPET I'M PROUD OF -->
 
