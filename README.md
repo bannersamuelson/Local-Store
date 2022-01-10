@@ -84,8 +84,9 @@ API snipet
 <!-- CODE SNIPPET I'M PROUD OF -->
 
 ## SWOT
-
-S - strengths being able to style the webpage effectively to make a good user experience
-W - getting geolocalization to be able to fully ultilize the app
-O - be able to have real-life practicality eventually
-T - Not being able to make an air table that is inclusive enough
+|  |SWOT Analysis |
+| --- | :---: | 
+|S | strengths - being able to style the webpage effectively to make a good user experience |
+|W | weaknesses - getting geolocalization to be able to fully ultilize the app |
+|O | opportunites - be able to have real-life practicality eventually |
+|T | threats - not being able to make an air table that is inclusive enough |
