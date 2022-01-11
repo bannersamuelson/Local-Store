@@ -2,11 +2,13 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import api from '../services/apiConfig';
+import newApi from '../services/apiConfig2'
 
 
 export default function Stores() {
 
   const [stores, setStores] = useState([])
+  const [clothing, setClothing] = useState({})
 
   useEffect(() => {
     const getStores = async () => {
@@ -16,6 +18,16 @@ export default function Stores() {
     }
     getStores()
   }, [])
+
+  useEffect(() => {
+    const getClothing = async () => {
+      const resp = await newApi.get()
+      console.log(resp.data)
+      setClothing(resp.data);
+    }
+    getClothing()
+  }, [])
+
 
   return (
     <div>

@@ -5,7 +5,7 @@ export default function Navbar() {
     <div>
       <Link to='/'><h1>Home</h1></Link>
       <ul>
-        <li><Link to='/stores'>Stores</Link></li>
+        <li><Link to='/store'>Stores</Link></li>
         <li><Link to='/contact us'>Contact</Link></li>
       </ul>
     </div>
