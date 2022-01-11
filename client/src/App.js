@@ -8,9 +8,8 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<div>Local Shops</div>} />
+        <Route path="/" element={<div>Store Spotlight</div>} />
         <Route path="/stores" element={<Stores />} />
-        <Route path='/clothing' element={<div>clothing</div>} />
         <Route path='/contact' element={<div>contact</div>} />
         <Route path='/cart' element={<div>cart</div>} />
       </Routes>
