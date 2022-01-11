@@ -37,14 +37,15 @@ export default function StoreDetail() {
   return (
     <div>
       <h3>{store.fields.storeName}</h3>
-      <img
+      <a href={store.fields.address} target='_blank'><img
         style={{ width: "300px" }}
         src={store.fields.storeImg}
         alt={store.fields.storeName}
-      />
+      /></a>
       <h5>{store.fields.storeDescription}</h5>
-      <a href={store.fields.address} target='_blank'>click</a>
+      <p>Address: {store.fields.storeAddress}</p>
+      <a href={store.fields.urlAddress} target='_blank'>Company Website</a>
 
-    </div >
+    </div>
   )
 }

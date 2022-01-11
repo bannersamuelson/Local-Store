@@ -1,4 +1,5 @@
 import './App.css';
+import './Store.css'
 import Navbar from './components/Navbar';
 import { Routes, Route } from "react-router-dom";
 import Stores from './components/Stores';
