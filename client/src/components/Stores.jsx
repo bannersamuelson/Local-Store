@@ -8,7 +8,7 @@ import newApi from '../services/apiConfig2'
 export default function Stores() {
 
   const [stores, setStores] = useState([])
-  const [clothing, setClothing] = useState({})
+
 
   useEffect(() => {
     const getStores = async () => {
@@ -17,15 +17,6 @@ export default function Stores() {
       setStores(res.data.records);
     }
     getStores()
-  }, [])
-
-  useEffect(() => {
-    const getClothing = async () => {
-      const resp = await newApi.get()
-      console.log(resp.data)
-      setClothing(resp.data);
-    }
-    getClothing()
   }, [])
 
 
