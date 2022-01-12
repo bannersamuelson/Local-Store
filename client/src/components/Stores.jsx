@@ -25,10 +25,10 @@ export default function Stores() {
   return (
     <div>
 
+      <Filter />
       {stores.map((store) => {
         return (
           <div>
-            <Filter />
             <div key={store.id} className="storeCSS" className='border'>
               <Link to={`/store/${store.id}`}><img
                 style={{ width: "300px" }}
