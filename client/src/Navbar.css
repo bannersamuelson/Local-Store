@@ -1,11 +1,17 @@
 .navBar {
   position: relative;
+  background-color: #0f293d;
+  
+}
+
+.navBar img {
+  width:75%;
 }
 
 .navBar button {
   position: fixed;
-  left: 0px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
   z-index: 10;
   cursor: pointer;
   background-color: transparent;
@@ -19,7 +25,7 @@
   position: fixed;
   top: 0;
   background: blue;
-  left: 0;
+  right: 0;
   bottom: 0;
   height: 100vh;
   width: 0;
@@ -62,7 +68,7 @@ a {
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #333;
+  background-color: white;
   margin: 6px 0;
   transition: 0.4s;
 }

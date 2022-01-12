@@ -11,9 +11,6 @@ export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [isActive, setActive] = useState(false);
 
-  // const ToggleClass = () => {
-  //   setActive(!isActive);
-  // };
 
   const handleToggle = () => {
     setNavbarOpen(prevToggle => !prevToggle)
@@ -22,9 +19,10 @@ export default function Navbar() {
 
   return (
 
-    <nav>
+    <div>
       <div className='navBar'>
         <div className="container nav-container">
+          <Link to='/'><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Mz0eMqya6lK_i9HTREbsrHKpdzrLGAP6mQ&usqp=CAU'}></img></Link>
 
           <button onClick={handleToggle}>
             <div className={`container ${isActive ? "change" : ""}`}>
@@ -43,6 +41,6 @@ export default function Navbar() {
 
         </div>
       </div>
-    </nav >
+    </div >
   )
 }

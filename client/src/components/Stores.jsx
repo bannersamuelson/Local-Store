@@ -4,6 +4,7 @@ import axios from 'axios';
 import api from '../services/apiConfig';
 import newApi from '../services/apiConfig2'
 import '../Store.css'
+import Filter from './Filter';
 
 
 export default function Stores() {
@@ -26,15 +27,17 @@ export default function Stores() {
 
       {stores.map((store) => {
         return (
-
-          <div key={store.id} className="storeCSS" className='border'>
-            <Link to={`/store/${store.id}`}><img
-              style={{ width: "300px" }}
-              src={store.fields.storeImg}
-              alt={store.fields.storeName}
-            /></Link>
-            <h5>{store.fields.storeDescription}</h5>
-            <Link to={`/store/${store.id}`}><button>View More</button></Link>
+          <div>
+            <Filter />
+            <div key={store.id} className="storeCSS" className='border'>
+              <Link to={`/store/${store.id}`}><img
+                style={{ width: "300px" }}
+                src={store.fields.storeImg}
+                alt={store.fields.storeName}
+              /></Link>
+              <h5>{store.fields.storeDescription}</h5>
+              <Link to={`/store/${store.id}`}><button>View More</button></Link>
+            </div>
           </div>
         );
       })}
