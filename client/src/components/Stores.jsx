@@ -25,8 +25,9 @@ export default function Stores() {
   return (
     <div>
 
-      <Filter />
+
       {stores.map((store) => {
+        // if (store.area === 'DC') {
         return (
           <div>
             <div key={store.id} className="storeCSS" className='border'>
@@ -39,8 +40,10 @@ export default function Stores() {
               <Link to={`/store/${store.id}`}><button>View More</button></Link>
             </div>
           </div>
-        );
+        )
+
       })}
+
 
     </div>
   )
