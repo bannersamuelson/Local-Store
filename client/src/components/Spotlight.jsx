@@ -25,17 +25,18 @@ export default function StoreDetail() {
 
   return (
     <div>
-      <h3>RECOMMENDED</h3>
-      <a href={store.fields.address} target='_blank'><img
-        style={{ width: "300px" }}
-        src={store.fields.storeImg}
-        alt={store.fields.storeName}
-      /></a>
-      <h5>{store.fields.storeDescription}</h5>
-      <p>Address: {store.fields.storeAddress}</p>
-      <a href={store.fields.urlAddress} target='_blank'>Company Website</a>
+      <div class="relative w-full overflow-hidden">
+        <img src="https://www.tpl.org/sites/default/files/4_2021_Arlington-Virginia_header.jpg" alt="alexandria" className="position-fixed z-40 w-full h-full" />
+        <Link to='/store'><div class="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV Shops</div>
+        </Link>
+      </div>
+      <div className="grid-cols-3">
+        <Link className="w-full" to='/store'>DC</Link>
+        <Link className="w-full" to='/store'>MD</Link>
+        <Link className="w-full" to='/store'>VA</Link>
+      </div>
 
 
-    </div>
+    </div >
   )
 }

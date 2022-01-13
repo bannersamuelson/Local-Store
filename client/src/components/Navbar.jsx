@@ -22,7 +22,7 @@ export default function Navbar() {
     <div>
       <div className='navBar'>
         <div className="container nav-container">
-          <Link to='/home'><img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Mz0eMqya6lK_i9HTREbsrHKpdzrLGAP6mQ&usqp=CAU'}></img></Link>
+          <Link to='/home'><img className="w-[250px]" src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Mz0eMqya6lK_i9HTREbsrHKpdzrLGAP6mQ&usqp=CAU'}></img></Link>
 
           <button onClick={handleToggle}>
             <div className={`container ${isActive ? "change" : ""}`}>

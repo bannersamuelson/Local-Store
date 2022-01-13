@@ -4,10 +4,6 @@
   
 }
 
-.navBar img {
-  width:75%;
-}
-
 .navBar button {
   position: fixed;
   right: 10px;
@@ -22,9 +18,9 @@
 .menuNav {
   overflow-y: scroll;
   list-style: none;
-  position: fixed;
+  position: absolute;
   top: 0;
-  background: blue;
+  background: black;
   right: 0;
   bottom: 0;
   height: 100vh;
@@ -34,6 +30,7 @@
   margin: 0;
   padding: 0;
   transition: 0.4s;
+  z-index: 1;
   /* z-index: 9; */
 }
 
@@ -44,7 +41,7 @@
 
 }
 
-a {
+.menuNav a {
   display: block;
   padding: 10px 40px;
   text-decoration: none;
