@@ -15,7 +15,7 @@ export default function Stores(props) {
 
   useEffect(() => {
     handleFilter();
-  }, [props])
+  }, [props.area, stores])
 
 
   useEffect(() => {
@@ -62,30 +62,5 @@ export default function Stores(props) {
 
     </div>
   )
-
-
-  // return (
-  //   <div>
-  //     {stores.map((store) => {
-  //       // if (store.area === 'DC') {
-  //       return (
-  //         <div>
-  //           <div key={store.id} className="storeCSS" className='border'>
-  //             <Link to={`/store/${store.id}`}><img
-  //               style={{ width: "300px" }}
-  //               src={store.fields.storeImg}
-  //               alt={store.fields.storeName}
-  //             /></Link>
-  //             <h5>{store.fields.storeDescription}</h5>
-  //             <Link to={`/store/${store.id}`}><button>View More</button></Link>
-  //           </div>
-  //         </div>
-  //       )
-
-  //     })}
-
-
-  //   </div>
-  // )
 }
 
