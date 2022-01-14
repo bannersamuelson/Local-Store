@@ -25,19 +25,35 @@ export default function StoreDetail() {
 
   return (
     <div>
-      <div class="relative w-full overflow-hidden">
-        <img src="https://www.tpl.org/sites/default/files/4_2021_Arlington-Virginia_header.jpg" alt="alexandria" className="position-fixed z-40 w-full h-full" />
-        <Link to='/store'><div class="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV Shops</div>
-        </Link>
+      <div>
+        <div className="relative w-full overflow-hidden">
+          <img src="https://www.tpl.org/sites/default/files/4_2021_Arlington-Virginia_header.jpg" alt="alexandria" className="position-fixed z-40 w-full h-full" />
+          <Link to='/store'>
+            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV Shops</div>
+          </Link>
+        </div>
       </div>
-      <div className="grid-cols-3">
-        <img className="w-full" src="http://photos.demandstudios.com/getty/article/81/32/78805318.jpg" alt="dc" />
-        <Link className="w-full" to='/store'>DC</Link>
-        <Link className="w-full" to='/store'>MD</Link>
-        <Link className="w-full" to='/store'>VA</Link>
-      </div>
+      {/* DC Info */}
+      <div className="card-zoom grid grid-cols-3">
+        <div className="card-zoom-image bg-DC w-full h-full object-cover hover:shadow-gray-50">
+          <h1 className="card-zoom-text">DC</h1>
+          <Link to='/store'>g
+
+          </Link>
+        </div>
 
 
-    </div >
+        <img className="w-full h-full object-cover" src="https://i.pinimg.com/originals/1e/ec/07/1eec0725909020027d20686786906b63.jpg" alt="baltimore harbor" />
+        <img className="w-full h-full object-cover" src="https://s26551.pcdn.co/wp-content/uploads/2020/04/2020-04-21-ARL-Features-28.jpg" alt="arlington viriginia" />
+
+        {/* <Link className="absolute w-full py-2.5 bottom-2 inset-x-0  text-white text-5xl text-center" to='/store'>MD</Link>
+        <Link className="absolute w-full py-2.5 bottom-2 inset-x-0  text-white text-5xl text-center" to='/store'>VA</Link> */}
+      </div>
+    </div>
+
+
+
   )
 }
+
+// https://daily-dev-tips.com/posts/tailwind-zooming-background-images/
