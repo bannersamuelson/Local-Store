@@ -34,23 +34,29 @@ export default function StoreDetail() {
         </div>
       </div>
       {/* DC Info */}
-      <div className="card-zoom grid grid-cols-3">
-        <div className="card-zoom-image bg-DC w-full h-full object-cover hover:shadow-gray-50">
-          <h1 className="card-zoom-text">DC</h1>
-          <Link to='/store'>g
+      {/* <div className="grid grid-cols-3"> */}
 
-          </Link>
-        </div>
+      <div className="w-full p-10 grid grid-cols-1">
+        <div class="w-full">
+          <div class="flex flex-wrap justify-center">
 
-
-        <img className="w-full h-full object-cover" src="https://i.pinimg.com/originals/1e/ec/07/1eec0725909020027d20686786906b63.jpg" alt="baltimore harbor" />
-        <img className="w-full h-full object-cover" src="https://s26551.pcdn.co/wp-content/uploads/2020/04/2020-04-21-ARL-Features-28.jpg" alt="arlington viriginia" />
-
-        {/* <Link className="absolute w-full py-2.5 bottom-2 inset-x-0  text-white text-5xl text-center" to='/store'>MD</Link>
-        <Link className="absolute w-full py-2.5 bottom-2 inset-x-0  text-white text-5xl text-center" to='/store'>VA</Link> */}
+            <div className="card-zoom">
+              <div className="w-full card-zoom-image bg-DC"></div>
+              <h1 className="card-zoom-text">DC</h1>
+            </div>
+            <div className="card-zoom">
+              <div className="w-full card-zoom-image bg-MD"></div>
+              <h1 className="card-zoom-text">MD</h1>
+            </div>
+            <div className="card-zoom">
+              <div className="w-full card-zoom-image bg-VA"></div>
+              <h1 className="card-zoom-text">VA</h1>
+            </div>
+          </div>
+        </div >
       </div>
-    </div>
 
+    </div>
 
 
   )
