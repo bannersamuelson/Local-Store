@@ -17,3 +17,5 @@ module.exports = {
   variants: {},
   plugins: [],
 }
+
+// https://play.tailwindcss.com/bJGtVPu4BT

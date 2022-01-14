@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import api from '../services/apiConfig';
 import newApi from '../services/apiConfig2'
-import '../Store.css'
+
 
 
 export default function Stores(props) {
 
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
-
 
 
   useEffect(() => {
@@ -44,7 +43,7 @@ export default function Stores(props) {
       {filter.map((store) => {
         return (
           <div>
-            <div className="m-10 rounded bg-gray-100 p-10" key={store.id}>
+            <div className="m-10 rounded bg-red-100 p-10" key={store.id}>
               <Link to={`/store/${store.id}`}><img
                 style={{ width: "300px" }}
                 src={store.fields.storeImg}
@@ -62,5 +61,30 @@ export default function Stores(props) {
 
     </div>
   )
+
+
+  // return (
+  //   <div>
+  //     {stores.map((store) => {
+  //       // if (store.area === 'DC') {
+  //       return (
+  //         <div>
+  //           <div key={store.id} className="storeCSS" className='border'>
+  //             <Link to={`/store/${store.id}`}><img
+  //               style={{ width: "300px" }}
+  //               src={store.fields.storeImg}
+  //               alt={store.fields.storeName}
+  //             /></Link>
+  //             <h5>{store.fields.storeDescription}</h5>
+  //             <Link to={`/store/${store.id}`}><button>View More</button></Link>
+  //           </div>
+  //         </div>
+  //       )
+
+  //     })}
+
+
+  //   </div>
+  // )
 }
 

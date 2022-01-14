@@ -1,4 +1,3 @@
-import './Store.css'
 import Navbar from './components/Navbar';
 import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
 import Stores from './components/Stores';
