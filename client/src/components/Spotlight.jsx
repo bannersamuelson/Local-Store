@@ -31,6 +31,7 @@ export default function StoreDetail() {
         </Link>
       </div>
       <div className="grid-cols-3">
+        <img className="w-full" src="http://photos.demandstudios.com/getty/article/81/32/78805318.jpg" alt="dc" />
         <Link className="w-full" to='/store'>DC</Link>
         <Link className="w-full" to='/store'>MD</Link>
         <Link className="w-full" to='/store'>VA</Link>
