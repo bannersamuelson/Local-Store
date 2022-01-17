@@ -5,9 +5,8 @@ import api from '../services/apiConfig';
 import newApi from '../services/apiConfig2'
 
 
-
-export default function Stores(props) {
-
+export default function Navigator(props) {
+  const [store, setStore] = useState({})
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
   const [area, setArea] = useState("")
@@ -44,10 +43,12 @@ export default function Stores(props) {
         <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
           onClick={() => {
             props.setArea("DC")
+            navigate('/store/dc')
           }}>Washington, DC</button>
         <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
           onClick={() => {
             props.setArea("MD")
+            navigate('/store/md')
           }}>Maryland</button>
         <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
           onClick={() => {
@@ -55,27 +56,6 @@ export default function Stores(props) {
           }}>Virginia</button>
         <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700" onClick={() => setFilter(stores)}>View All</button>
       </div>
-
-      {filter.map((store) => {
-        return (
-          <div>
-            <div className="m-10 rounded bg-red-100 p-10" key={store.id}>
-              <Link to={`/store/${store.id}`}><img
-                style={{ width: "300px" }}
-                src={store.fields.storeImg}
-                alt={store.fields.storeName}
-              /></Link>
-              <div className="m-5"><h5 className="text-xl">{store.fields.storeDescription}</h5>
-                <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to={`/store/${store.id}`}><button>View More</button></Link>
-              </div>
-            </div>
-          </div>
-        )
-
-      })}
-
-
     </div>
   )
 }
-

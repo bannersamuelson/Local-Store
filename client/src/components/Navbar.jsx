@@ -16,8 +16,6 @@ export default function Navbar(props) {
   const [area, setArea] = useState("")
 
 
-
-
   useEffect(() => {
     handleFilter();
   }, [props.area, stores])
@@ -55,10 +53,26 @@ export default function Navbar(props) {
 
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <li><Link to='/home' onClick={handleToggle}>Home</Link></li>
-            <li><Link to='/store' onClick={() => {
-              setArea("DC")
-              navigate('/store')
-            }}>Stores</Link></li>
+            <li className="text-align: right">
+              <Link className="text-align: right" to='/store/dc' onClick={() => {
+                props.setArea("DC")
+
+              }}>DC</Link>
+            </li>
+            <li>
+              <Link to='/store' onClick={() => {
+                props.setArea("MD")
+                navigate('/store/md')
+              }}>MD</Link>
+            </li>
+            <li>
+              <Link to='/store/va' onClick={() => {
+                props.setArea("DC")
+                navigate('/store')
+              }}>VA</Link>
+            </li>
+
+
             <li><Link to='/contact' onClick={handleToggle}>Contact</Link></li>
           </ul>
 
