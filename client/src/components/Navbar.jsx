@@ -1,20 +1,34 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../Navbar.css'
 
 
 
 
 
-export default function Navbar() {
+export default function Navbar(props) {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [isActive, setActive] = useState(false);
+  const [stores, setStores] = useState([])
+  const [filter, setFilter] = useState([])
 
+  useEffect(() => {
+    handleFilter();
+  }, [props.area, stores])
 
   const handleToggle = () => {
     setNavbarOpen(prevToggle => !prevToggle)
     setActive(!isActive);
+  }
+
+  const handleFilter = () => {
+    let storeFilter = stores.filter(store => {
+      if (store.fields.area === props.area) {
+        return store
+      }
+    })
+    setFilter(storeFilter);
   }
 
   return (
@@ -35,7 +49,11 @@ export default function Navbar() {
 
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <li><Link to='/home' onClick={handleToggle}>Home</Link></li>
-            <li><Link to='/store' onClick={handleToggle}>Stores</Link></li>
+            <li><Link to='/store' onClick={{
+              handleToggle()
+              setArea
+
+            }}>Stores</Link></li>
             <li><Link to='/contact' onClick={handleToggle}>Contact</Link></li>
           </ul>
 

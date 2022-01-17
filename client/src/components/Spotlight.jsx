@@ -4,11 +4,11 @@ import api from '../services/apiConfig';
 import Stores from '../components/Stores';
 
 
-export default function Spotlight() {
+export default function Spotlight(props) {
   const [store, setStore] = useState({})
-  const [clothes, setClothes] = useState({})
   const [area, setArea] = useState("")
   const navigate = useNavigate()
+  const [stores, setStores] = useState("")
 
   // store api
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function Spotlight() {
       setStore(res.data.records[0])
     }
     getStore()
-  }, []);
+  }, [props.area, stores]);
 
   if (!store.fields) {
     return <div>Loading!!!</div>
@@ -40,24 +40,28 @@ export default function Spotlight() {
       <div className="w-full p-10 grid grid-cols-1">
         <div className="w-full">
           <div className="flex flex-wrap justify-center">
-            <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
-              onClick={() => {
-                setArea("DC")
-                navigate('/store')
-              }}>Washington, DC</button>
 
-            <div className="card-zoom">
-              <div className="w-full card-zoom-image bg-DC"></div>
-              <h1 className="card-zoom-text">DC</h1>
+            <div onClick={() => {
+              props.setArea("DC")
+              navigate('/store')
+            }} className="card-zoom">
+              <div className="w-full card-zoom-image bg-DC cursor-pointer"></div>
+              <h1 className="card-zoom-text cursor-pointer">DC</h1>
             </div>
-            <div className="card-zoom">
-              <div className="w-full card-zoom-image bg-MD"></div>
-              <h1 className="card-zoom-text">MD</h1>
+            <div onClick={() => {
+              props.setArea("MD")
+              navigate('/store')
+            }} className="card-zoom">
+              <div className="w-full card-zoom-image bg-MD cursor-pointer"></div>
+              <h1 className="card-zoom-text cursor-pointer">MD</h1>
             </div>
 
-            <div className="card-zoom">
-              <div className="w-full card-zoom-image bg-VA"></div>
-              <h1 className="card-zoom-text">VA</h1>
+            <div onClick={() => {
+              props.setArea("VA")
+              navigate('/store')
+            }} className="card-zoom">
+              <div className="w-full card-zoom-image bg-VA cursor-pointer"></div>
+              <h1 className="card-zoom-text cursor-pointer">VA</h1>
             </div>
           </div>
         </div >
