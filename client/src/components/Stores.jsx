@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
 import axios from 'axios';
 import api from '../services/apiConfig';
 import newApi from '../services/apiConfig2'
@@ -10,6 +10,11 @@ export default function Stores(props) {
 
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
+  const [area, setArea] = useState("")
+  const navigate = useNavigate()
+
+
+
 
 
   useEffect(() => {
@@ -38,8 +43,22 @@ export default function Stores(props) {
 
   return (
     <div>
+      <div className="bg-blue-100 p-0">
 
-      <button onClick={() => setFilter(stores)}>reset</button>
+        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
+          onClick={() => {
+            props.setArea("DC")
+          }}>Washington, DC</button>
+        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
+          onClick={() => {
+            props.setArea("MD")
+          }}>Maryland</button>
+        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
+          onClick={() => {
+            props.setArea("VA")
+          }}>Virginia</button>
+        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700" onClick={() => setFilter(stores)}>View All</button>
+      </div>
       {filter.map((store) => {
         return (
           <div>

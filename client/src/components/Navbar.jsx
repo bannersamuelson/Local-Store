@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, Navigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import '../Navbar.css'
 
@@ -12,6 +12,11 @@ export default function Navbar(props) {
   const [isActive, setActive] = useState(false);
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
+  const navigate = useNavigate()
+  const [area, setArea] = useState("")
+
+
+
 
   useEffect(() => {
     handleFilter();
@@ -33,6 +38,7 @@ export default function Navbar(props) {
 
   return (
 
+
     <div>
       <div className='navBar'>
         <div className="container nav-container">
@@ -49,10 +55,9 @@ export default function Navbar(props) {
 
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <li><Link to='/home' onClick={handleToggle}>Home</Link></li>
-            <li><Link to='/store' onClick={{
-              handleToggle()
-              setArea
-
+            <li><Link to='/store' onClick={() => {
+              setArea("DC")
+              navigate('/store')
             }}>Stores</Link></li>
             <li><Link to='/contact' onClick={handleToggle}>Contact</Link></li>
           </ul>
