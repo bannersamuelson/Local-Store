@@ -43,14 +43,14 @@ export default function Spotlight(props) {
 
             <div onClick={() => {
               props.setArea("DC")
-              navigate('/store')
+              navigate('/store/dc')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-DC cursor-pointer"></div>
               <h1 className="card-zoom-text cursor-pointer">DC</h1>
             </div>
             <div onClick={() => {
               props.setArea("MD")
-              navigate('/store')
+              navigate('/store/md')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-MD cursor-pointer"></div>
               <h1 className="card-zoom-text cursor-pointer">MD</h1>
@@ -58,13 +58,21 @@ export default function Spotlight(props) {
 
             <div onClick={() => {
               props.setArea("VA")
-              navigate('/store')
+              navigate('/store/va')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-VA cursor-pointer"></div>
               <h1 className="card-zoom-text cursor-pointer">VA</h1>
             </div>
           </div>
         </div >
+      </div>
+      <div>
+        <div className="relative w-full overflow-hidden">
+          <img src="https://www.thegrahamgeorgetown.com/wp-content/uploads/2020/11/Graham-RTO-2017-4.jpg" alt="graham georgetown rooftop" className="position-fixed z-40 w-full h-full" />
+          <Link to='/store'>
+            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center" f>DC Rooftop Restaurants</div>
+          </Link>
+        </div>
       </div>
 
     </div >
