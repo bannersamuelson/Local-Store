@@ -65,7 +65,7 @@ export default function Va(props) {
       </div>
       <div>
         {
-          stores.map((store) => {
+          stores.forEach((store) => {
             if (store.fields.area === "VA") {
               return (
                 <div>

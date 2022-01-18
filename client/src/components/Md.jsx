@@ -62,7 +62,7 @@ export default function Dc(props) {
       </div>
       <div>
         {
-          stores.map((store) => {
+          stores.forEach((store) => {
             if (store.fields.area === "MD") {
               return (
                 <div>
