@@ -64,19 +64,21 @@ export default function Dc(props) {
           </div>
         </div>
 
+      </div>
+      <div>
         {
           stores.map((store) => {
             if (store.fields.area === "MD") {
               return (
                 <div>
                   <div>
-                    <div className="p-5 h-30 content-center m-10 rounded bg-neutral-600" key={store.id}>
+                    <div className="flex justify-center items-center p-5 h-30 content-center m-10 rounded bg-neutral-600" key={store.id}>
                       <Link className="" to={`/store/${store.id}`}><img
                         style={{ width: "300px" }}
                         src={store.fields.storeImg}
                         alt={store.fields.storeName}
                       /></Link>
-                      <div className="m-5"><h5 className="text-xl">{store.fields.storeDescription}</h5>
+                      <div className="m-5"><h5 className="justify-center items-center text-xl">{store.fields.storeDescription}</h5>
                         <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to={`/store/${store.id}`}><button>View More</button></Link>
                       </div>
                     </div>
@@ -88,7 +90,6 @@ export default function Dc(props) {
           })
         }
       </div>
-
     </div >
   )
 }

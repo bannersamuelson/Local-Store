@@ -7,7 +7,10 @@ import Spotlight from './components/Spotlight';
 import { useState } from 'react';
 import Dc from './components/Dc'
 import Md from './components/Md';
-
+import Va from './components/Va'
+import Footer from './components/Footer';
+import Reviews from './components/Reviews';
+import NewReview from './components/NewReview';
 
 function App() {
 
@@ -22,10 +25,12 @@ function App() {
         <Route path="/store" element={<Stores setArea={setArea} area={area} />} />
         <Route path="/store/dc" element={<Dc setArea={setArea} area={area} />} />
         <Route path="/store/md" element={<Md setArea={setArea} area={area} />} />
-        <Route path="/store/va" element={<Stores setArea={setArea} area={area} />} />
+        <Route path="/store/va" element={<Va setArea={setArea} area={area} />} />
         <Route path="/store/:id" element={<StoreDetail />} />
-        <Route path='/contact' element={<div>contact</div>} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/reviews/new" element={<NewReview />} />
       </Routes>
+      <Footer />
 
     </div>
   );

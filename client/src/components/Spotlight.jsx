@@ -30,7 +30,7 @@ export default function Spotlight(props) {
         <div className="relative w-full overflow-hidden">
           <img src="https://www.tpl.org/sites/default/files/4_2021_Arlington-Virginia_header.jpg" alt="alexandria" className="position-fixed z-40 w-full h-full" />
           <Link to='/store/dc'>
-            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV Shops</div>
+            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV</div>
           </Link>
         </div>
       </div>
@@ -67,8 +67,8 @@ export default function Spotlight(props) {
       <div>
         <div className="relative w-full overflow-hidden">
           <img src="https://www.thegrahamgeorgetown.com/wp-content/uploads/2020/11/Graham-RTO-2017-4.jpg" alt="graham georgetown rooftop" className="position-fixed z-40 w-full h-full" />
-          <Link to='/store'>
-            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center" f>DC Rooftop Restaurants</div>
+          <Link to='/store/dc'>
+            <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DC</div>
           </Link>
         </div>
       </div>

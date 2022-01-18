@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom'
+import Navigator from './Navigator';
 
 import api from '../services/apiConfig';
 
@@ -20,33 +21,26 @@ export default function StoreDetail() {
     getStore()
   }, []);
 
-  // // Clothing api
-  // useEffect(() => {
-  //   const getClothing = async () => {
-  //     const res = await newApi.get()
-  //     console.log(res.data)
-  //     setClothing(res.data);
-  //   }
-  //   getClothing()
-  // }, [])
-
   if (!store.fields) {
     return <div>Loading!!!</div>
   }
 
   return (
     <div>
-      <h3 className="flex" >{store.fields.storeName}</h3>
-      <a href={store.fields.address} target='_blank'><img
-        style={{ width: "300px" }}
-        src={store.fields.storeImg}
-        alt={store.fields.storeName}
-      /></a>
-      <h5 className="flex">{store.fields.storeDescription}</h5>
-      <p>Address: {store.fields.storeAddress}</p>
-      <a href={store.fields.urlAddress} target='_blank'>Company Website</a>
-      <Link to='/store'>Back</Link>
-
+      <Navigator />
+      <div className="flex items-center justify-items-center p-5 h-screen content-center m-10 rounded bg-neutral-600">
+        <a href={store.fields.address} target='_blank'><img
+          style={{ width: "500px" }}
+          src={store.fields.storeImg}
+          alt={store.fields.storeName}
+        /></a>
+        <h3>{store.fields.storeName}</h3>
+        <h5 className="flex">{store.fields.storeDescription}</h5>
+        <p>Address: {store.fields.storeAddress}</p>
+        <div className="bg-neutral-900 my-8 p-2 text-slate-50">
+          <a href={store.fields.urlAddress} target='_blank'>Company Website</a>
+        </div>
+      </div>
     </div>
   )
 }

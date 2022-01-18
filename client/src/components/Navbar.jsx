@@ -56,26 +56,17 @@ export default function Navbar(props) {
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
             <li><Link to='/' onClick={handleToggle}>Home</Link></li>
             <li>
-              <Link className="text-align: right" to='/store/dc' onClick={() => {
-                props.setArea("DC")
-
-              }}>DC</Link>
+              <Link to='/store/dc' >DC</Link>
             </li>
             <li>
-              <Link to='/store/md' onClick={() => {
-                props.setArea("MD")
-                navigate('/store/md')
-              }}>MD</Link>
+              <Link to='/store/md'>MD</Link>
             </li>
             <li>
-              <Link to='/store/va' onClick={() => {
-                setArea("DC")
-                navigate('/store')
-              }}>VA</Link>
+              <Link to='/store/va'>VA</Link>
             </li>
 
 
-            <li><Link to='/contact' onClick={handleToggle}>Contact</Link></li>
+            <li><Link to='/reviews' onClick={handleToggle}>User Reviews</Link></li>
           </ul>
 
         </div>
