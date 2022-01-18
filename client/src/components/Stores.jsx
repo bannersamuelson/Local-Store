@@ -59,7 +59,7 @@ export default function Stores(props) {
       {filter.map((store) => {
         return (
           <div>
-            <div className="m-10 rounded bg-red-100" key={store.id}>
+            <div className="m-10 rounded bg-white" key={store.id}>
               <Link to={`/store/${store.id}`}><img
                 style={{ width: "300px" }}
                 src={store.fields.storeImg}

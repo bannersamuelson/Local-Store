@@ -74,7 +74,7 @@ export default function Dc(props) {
         stores.map((store) => {
           if (store.fields.area === "DC") {
             return (
-              <div>
+              <div className="w-full p-10 grid grid-cols-3 gap-4">
                 <div className="m-10 rounded bg-red-100 p-10" key={store.id}>
                   <Link to={`/store/${store.id}`}><img
                     style={{ width: "300px" }}
