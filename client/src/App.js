@@ -6,6 +6,7 @@ import StoreDetail from './components/StoreDetail';
 import Spotlight from './components/Spotlight';
 import { useState } from 'react';
 import Dc from './components/Dc'
+import Md from './components/Md';
 
 
 function App() {
@@ -21,12 +22,10 @@ function App() {
         <Route path="/home" element={<Spotlight setArea={setArea} />} />
         <Route path="/store" element={<Stores setArea={setArea} area={area} />} />
         <Route path="/store/dc" element={<Dc setArea={setArea} area={area} />} />
-        <Route path="/store/md" element={<Stores setArea={setArea} area={area} />} />
+        <Route path="/store/md" element={<Md setArea={setArea} area={area} />} />
         <Route path="/store/va" element={<Stores setArea={setArea} area={area} />} />
         <Route path="/store/:id" element={<StoreDetail />} />
-        <Route path="/store/nav" element={<Navigator setArea={setArea} area={area} />} />
         <Route path='/contact' element={<div>contact</div>} />
-        <Route path='/cart' element={<div>cart</div>} />
       </Routes>
 
     </div>

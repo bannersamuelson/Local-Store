@@ -42,14 +42,13 @@ export default function Spotlight(props) {
           <div className="flex flex-wrap justify-center">
 
             <div onClick={() => {
-              props.setArea("DC")
               navigate('/store/dc')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-DC cursor-pointer"></div>
               <h1 className="card-zoom-text cursor-pointer">DC</h1>
             </div>
             <div onClick={() => {
-              props.setArea("MD")
+
               navigate('/store/md')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-MD cursor-pointer"></div>
@@ -57,7 +56,6 @@ export default function Spotlight(props) {
             </div>
 
             <div onClick={() => {
-              props.setArea("VA")
               navigate('/store/va')
             }} className="card-zoom">
               <div className="w-full card-zoom-image bg-VA cursor-pointer"></div>
