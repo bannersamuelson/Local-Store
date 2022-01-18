@@ -49,7 +49,7 @@ export default function Dc(props) {
               <img src="https://scwcontent.affino.com/AcuCustom/Sitename/DAM/016/Washingtn_at_night_-_AdobeStock_182500142_-_SCW.jpg" alt="capitol building" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.tripsavvy.com/dc-bars-and-nightlife-1039744" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
+                <a href="https://www.tripsavvy.com/dc-bars-and-nightlife-1039744" target="_blank" className=" absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function Dc(props) {
       </div>
 
       <div>
-        <h1 className="text-4xl text-center">Support DC Stores</h1>
+        <h1 className="text-4xl text-center text-white">Support DC Stores</h1>
       </div>
       {
         stores.map((store) => {

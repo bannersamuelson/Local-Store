@@ -29,7 +29,7 @@ export default function Spotlight(props) {
       <div>
         <div className="relative w-full overflow-hidden">
           <img src="https://www.tpl.org/sites/default/files/4_2021_Arlington-Virginia_header.jpg" alt="alexandria" className="position-fixed z-40 w-full h-full" />
-          <Link to='/store'>
+          <Link to='/store/dc'>
             <div className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Explore DMV Shops</div>
           </Link>
         </div>

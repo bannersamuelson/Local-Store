@@ -15,11 +15,10 @@ function App() {
   const navigate = useNavigate()
 
   return (
-    <div className='bg-grey-100 text-center'>
+    <div className='bg-zinc-800 text-center'>
       <Navbar setArea={setArea} />
       <Routes>
-        <Route path='/' element={<div className='bg-red-500'>area</div>} />
-        <Route path="/home" element={<Spotlight setArea={setArea} />} />
+        <Route path="/" element={<Spotlight setArea={setArea} />} />
         <Route path="/store" element={<Stores setArea={setArea} area={area} />} />
         <Route path="/store/dc" element={<Dc setArea={setArea} area={area} />} />
         <Route path="/store/md" element={<Md setArea={setArea} area={area} />} />

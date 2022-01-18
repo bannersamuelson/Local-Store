@@ -65,7 +65,7 @@ export default function Dc(props) {
         </div>
       </div>
       <div>
-        <h1 className="text-4xl text-center">Support Maryland Stores</h1>
+        <h1 className="text-4xl text-center text-white">Support Maryland Stores</h1>
       </div>
 
       {

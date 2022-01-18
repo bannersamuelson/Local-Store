@@ -40,9 +40,9 @@ export default function Navbar(props) {
 
 
     <div className="bg-stone-700">
-      <div className='navBar'>
+      <div className="navBar">
         <div className="container nav-container">
-          <Link to='/home'><img className="w-[250px]" src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Mz0eMqya6lK_i9HTREbsrHKpdzrLGAP6mQ&usqp=CAU'}></img></Link>
+          <Link to='/'><img className="w-[150px] object-center" src={'https://i.ibb.co/2SDHPVN/supportinglocals-logo.png'}></img></Link>
 
           <button onClick={handleToggle}>
             <div className={`container ${isActive ? "change" : ""}`}>
@@ -54,7 +54,7 @@ export default function Navbar(props) {
 
 
           <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
-            <li><Link to='/home' onClick={handleToggle}>Home</Link></li>
+            <li><Link to='/' onClick={handleToggle}>Home</Link></li>
             <li>
               <Link className="text-align: right" to='/store/dc' onClick={() => {
                 props.setArea("DC")
