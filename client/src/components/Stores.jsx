@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import api from '../services/apiConfig';
 
 
@@ -7,7 +7,7 @@ import api from '../services/apiConfig';
 export default function Stores(props) {
 
   const [stores, setStores] = useState([])
-  const [filter, setFilter] = useState([])
+
 
 
   useEffect(() => {

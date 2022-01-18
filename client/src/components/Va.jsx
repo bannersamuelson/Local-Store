@@ -7,7 +7,7 @@ import Navigator from './Navigator';
 
 export default function Va(props) {
   const [stores, setStores] = useState([])
-  const navigate = useNavigate()
+
 
 
 

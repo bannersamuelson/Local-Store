@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import api from '../services/apiConfig2';
 
-const default_input = {
-  firstName: "",
-  review: "",
-}
+// const default_input = {
+//   firstName: "",
+//   review: "",
+// }
 export default function Reviews() {
 
   const [users, setUsers] = useState([])
