@@ -84,6 +84,8 @@ export default function Va(props) {
                 </div>
               )
 
+            } else {
+              return null
             }
           })
         }
