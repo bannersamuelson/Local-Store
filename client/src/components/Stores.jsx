@@ -22,7 +22,7 @@ export default function Stores(props) {
 
   return (
     <div>
-      {filter.map((store) => {
+      {/* {filter.map((store) => {
         return (
           <div>
             <div className="md:flex m-10 rounded bg-white" key={store.id}>
@@ -34,14 +34,14 @@ export default function Stores(props) {
               <div className="m-5"><h5 className="text-xl">{store.fields.storeDescription}</h5>
                 <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to={`/store/${store.id}`}><button>View More</button></Link>
               </div>
-            </div>
-          </div>
-        )
-
-      })}
-
-
+            </div> */}
     </div>
   )
+
+  // })}
+
+
+  //     </div >
+  //   )
 }
 
