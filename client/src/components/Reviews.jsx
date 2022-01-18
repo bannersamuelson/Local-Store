@@ -47,7 +47,7 @@ export default function Reviews() {
     <div className="bg-neutral-100 h-screen">
       <div className="p-5">
         <h1 className="text-3xl">REVIEWS</h1>
-        <ul className="m-5">
+        <ul className="grid grid-cols-3 m-5">
           {users.map((user) => {
             return (
               <li className="bg-neutral-600 rounded-lg m-5 text-white" key={user.fields.firstName}>
@@ -67,8 +67,8 @@ export default function Reviews() {
         handleSubmit={handleSubmit}
         type={"Create"}
       /> */}
-          <Link to="/reviews/new">Leave a review</Link>
         </ul>
+        <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to="/reviews/new">Leave a review</Link>
       </div>
     </div>
   )
