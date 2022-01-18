@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import '../Navbar.css'
 
 
@@ -8,7 +8,6 @@ import '../Navbar.css'
 
 export default function Navigator(props) {
 
-  const [isActive, setActive] = useState(false);
   const navigate = useNavigate()
 
 

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Link, Navigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import api from '../services/apiConfig';
 import Navigator from './Navigator';
 
 
 export default function Dc(props) {
   const [stores, setStores] = useState([])
-  const navigate = useNavigate()
+
 
 
   useEffect(() => {
