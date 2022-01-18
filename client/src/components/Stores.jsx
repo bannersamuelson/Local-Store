@@ -9,17 +9,12 @@ export default function Stores(props) {
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
 
-  useEffect(() => {
-    handleFilter();
-  }, [props.area, stores])
-
 
   useEffect(() => {
     const getStores = async () => {
       const res = await api.get()
       console.log(res.data.records)
       setStores(res.data.records);
-      setFilter(res.data.records)
     }
     getStores()
   }, [])
