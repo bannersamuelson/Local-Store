@@ -19,7 +19,7 @@ export default function StoreDetail() {
       setStore(res.data)
     }
     getStore()
-  }, []);
+  }, [id]);
 
   if (!store.fields) {
     return <div>Loading!!!</div>

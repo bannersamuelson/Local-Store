@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar';
 import { Routes, Route } from "react-router-dom";
-import Stores from './components/Stores';
 import StoreDetail from './components/StoreDetail';
 import Spotlight from './components/Spotlight';
 import { useState } from 'react';
@@ -21,7 +20,6 @@ function App() {
       <Navbar setArea={setArea} />
       <Routes>
         <Route path="/" element={<Spotlight setArea={setArea} />} />
-        <Route path="/store" element={<Stores setArea={setArea} area={area} />} />
         <Route path="/store/dc" element={<Dc setArea={setArea} area={area} />} />
         <Route path="/store/md" element={<Md setArea={setArea} area={area} />} />
         <Route path="/store/va" element={<Va setArea={setArea} area={area} />} />
