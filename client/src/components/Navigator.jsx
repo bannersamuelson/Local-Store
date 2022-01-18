@@ -1,4 +1,4 @@
-import { Link, useNavigate, Navigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import '../Navbar.css'
 
@@ -8,32 +8,14 @@ import '../Navbar.css'
 
 export default function Navigator(props) {
 
-  const [navbarOpen, setNavbarOpen] = useState(false)
   const [isActive, setActive] = useState(false);
-  const [stores, setStores] = useState([])
-  const [filter, setFilter] = useState([])
   const navigate = useNavigate()
-  const [area, setArea] = useState("")
+
 
 
   useEffect(() => {
     handleFilter();
   }, [props.area, stores])
-
-  const handleToggle = () => {
-    setNavbarOpen(prevToggle => !prevToggle)
-    setActive(!isActive);
-  }
-
-  const handleFilter = () => {
-    let storeFilter = stores.filter(store => {
-      if (store.fields.area === props.area) {
-        return store
-      }
-    })
-    setFilter(storeFilter);
-  }
-
 
   return (
     <div className="bg-white-900 h-8 my-8">

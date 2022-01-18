@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar';
-import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
+import { useNavigate, Routes, Route } from "react-router-dom";
 import Stores from './components/Stores';
 import StoreDetail from './components/StoreDetail';
 import Spotlight from './components/Spotlight';
@@ -14,7 +14,7 @@ import NewReview from './components/NewReview';
 function App() {
 
   const [area, setArea] = useState("")
-  const navigate = useNavigate()
+
 
   return (
     <div className='bg-zinc-800 text-center'>

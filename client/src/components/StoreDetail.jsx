@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import Navigator from './Navigator';
 
 import api from '../services/apiConfig';
@@ -29,7 +29,7 @@ export default function StoreDetail() {
     <div>
       <Navigator />
       <div className="flex items-center justify-items-center p-5 h-screen content-center m-10 rounded bg-neutral-600">
-        <a href={store.fields.address} target='_blank'><img
+        <a href={store.fields.address} rel="noreferrer" target='_blank'><img
           style={{ width: "500px" }}
           src={store.fields.storeImg}
           alt={store.fields.storeName}
@@ -39,7 +39,7 @@ export default function StoreDetail() {
           <h5 className="flex">{store.fields.storeDescription}</h5>
           <p>Address: {store.fields.storeAddress}</p>
           <br />
-          <a className="bg-neutral-900 my-8 p-3 text-slate-50" href={store.fields.urlAddress} target='_blank'>Company Website</a>
+          <a className="bg-neutral-900 my-8 p-3 text-slate-50" href={store.fields.urlAddress} target="_blank" rel="noreferrer">Company Website</a>
 
         </div>
       </div >

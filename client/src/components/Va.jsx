@@ -1,15 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
-import axios from 'axios';
+import { useNavigate, Link } from "react-router-dom";
+
 import api from '../services/apiConfig';
-import newApi from '../services/apiConfig2'
 import Navigator from './Navigator';
 
 
 export default function Va(props) {
   const [stores, setStores] = useState([])
-  const [filter, setFilter] = useState([])
-  const [area, setArea] = useState("")
   const navigate = useNavigate()
 
 
@@ -38,7 +35,7 @@ export default function Va(props) {
               <img src="https://northernvirginiamag.com/wp-content/uploads/2019/06/canopy.jpg" alt="virginia rooftop" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.onlyinyourstate.com/virginia/rooftop-dining-virginia/</div>" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Virginia Rooftop Restaurants </a>
+                <a href="https://www.onlyinyourstate.com/virginia/rooftop-dining-virginia/</div>" target="_blank" rel="noreferrer" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Virginia Rooftop Restaurants </a>
               </div>
             </div>
           </div>
@@ -49,7 +46,7 @@ export default function Va(props) {
               <img src="https://res.cloudinary.com/simpleview/image/upload/v1552586925/clients/norfolk/downtown_at_night_3530dce1-7235-4ca7-84a2-311963582c2c.png" alt="Norfolk virignia" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.visitalexandriava.com/things-to-do/nightlife/" target="_blank" className=" absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
+                <a href="https://www.visitalexandriava.com/things-to-do/nightlife/" target="_blank" rel="noreferrer" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
               </div>
             </div>
           </div>
@@ -60,7 +57,7 @@ export default function Va(props) {
               <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/The_Skyline_of_the_Virginia_Beach_Oceanfront.jpg" alt="virginia beach" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.planetware.com/tourist-attractions/virginia-usva.htm" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Things to do in Virignia</a>
+                <a href="https://www.planetware.com/tourist-attractions/virginia-usva.htm" target="_blank" rel="noreferrer" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Things to do in Virignia</a>
               </div>
             </div>
           </div>

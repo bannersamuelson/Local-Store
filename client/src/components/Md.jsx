@@ -1,15 +1,11 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
-import axios from 'axios';
+import { useNavigate, Link, Navigate } from "react-router-dom";
 import api from '../services/apiConfig';
-import newApi from '../services/apiConfig2'
 import Navigator from './Navigator';
 
 
 export default function Dc(props) {
   const [stores, setStores] = useState([])
-  const [filter, setFilter] = useState([])
-  const [area, setArea] = useState("")
   const navigate = useNavigate()
 
 
@@ -36,7 +32,7 @@ export default function Dc(props) {
               <img src="https://cdn.vox-cdn.com/thumbor/iFaqWymN2OOgC-0PCjxIXBew2Jc=/0x0:2000x1335/1200x900/filters:focal(840x508:1160x828)/cdn.vox-cdn.com/uploads/chorus_image/image/59446887/umbrella_view.20.jpg" alt="maryland rooftop" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.onlyinyourstate.com/maryland/rooftop-dining-md/" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Maryland Rooftop Restaurants </a>
+                <a href="https://www.onlyinyourstate.com/maryland/rooftop-dining-md/" rel="noreferrer" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Maryland Rooftop Restaurants </a>
               </div>
             </div>
           </div>
@@ -47,7 +43,7 @@ export default function Dc(props) {
               <img src="https://www.tripsavvy.com/thmb/Unbv8Zv3prfIiQSK77yX2AEE1oM=/2190x1369/filters:fill(auto,1)/baltimore---inner-harbor-867925060-c26cb3aedf574c99943f8a81b33c7bb6.jpg" alt="baltimore harbor" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://bestthingsmd.com/bars/" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
+                <a href="https://bestthingsmd.com/bars/" rel="noreferrer" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Nightlife</a>
               </div>
             </div>
           </div>
@@ -58,7 +54,7 @@ export default function Dc(props) {
               <img src="https://a.cdn-hotels.com/gdcs/production123/d1709/6bb313ce-e3ab-475e-a015-7d45ff2c1235.jpg" alt="ferris wheel" className="position-fixed z-40 w-full h-full" />
 
               <div>
-                <a href="https://www.busytourist.com/fun-things-to-do-in-maryland/" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Things to do in Maryland</a>
+                <a href="https://www.busytourist.com/fun-things-to-do-in-maryland/" rel="noreferrer" target="_blank" className="absolute w-full py-2.5 bottom-20 inset-x-0  text-white text-5xl text-center">Things to do in Maryland</a>
               </div>
             </div>
           </div>

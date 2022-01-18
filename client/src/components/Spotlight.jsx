@@ -1,14 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import api from '../services/apiConfig';
-import Stores from '../components/Stores';
 
 
 export default function Spotlight(props) {
   const [store, setStore] = useState({})
-  const [area, setArea] = useState("")
   const navigate = useNavigate()
-  const [stores, setStores] = useState("")
 
   // store api
   useEffect(() => {
@@ -18,7 +15,7 @@ export default function Spotlight(props) {
       setStore(res.data.records[0])
     }
     getStore()
-  }, [props.area, stores]);
+  }, []);
 
   if (!store.fields) {
     return <div>Loading!!!</div>

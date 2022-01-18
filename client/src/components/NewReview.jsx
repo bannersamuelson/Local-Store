@@ -27,6 +27,7 @@ export default function NewReview() {
     event.preventDefault();
     const fields = input;
     const res = await api.post("/", { fields });
+    console.log(res.data)
     setInput(default_input);
     navigate("/reviews")
   }

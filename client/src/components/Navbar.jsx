@@ -1,8 +1,6 @@
-import { Link, useNavigate, Navigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import '../Navbar.css'
-
-
 
 
 
@@ -10,12 +8,6 @@ export default function Navbar(props) {
 
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [isActive, setActive] = useState(false);
-  const [stores, setStores] = useState([])
-  const [filter, setFilter] = useState([])
-  const navigate = useNavigate()
-  const [area, setArea] = useState("")
-
-
 
 
   useEffect(() => {
@@ -27,22 +19,13 @@ export default function Navbar(props) {
     setActive(!isActive);
   }
 
-  const handleFilter = () => {
-    let storeFilter = stores.filter(store => {
-      if (store.fields.area === props.area) {
-        return store
-      }
-    })
-    setFilter(storeFilter);
-  }
-
   return (
 
 
     <div className="bg-stone-700">
       <div className="navBar">
         <div className="container nav-container">
-          <Link to='/'><img className="w-[150px] object-center" src={'https://i.ibb.co/2SDHPVN/supportinglocals-logo.png'}></img></Link>
+          <Link to='/'><img className="w-[150px] object-center" alt="website logo" src={'https://i.ibb.co/2SDHPVN/supportinglocals-logo.png'}></img></Link>
 
           <button onClick={handleToggle}>
             <div className={`container ${isActive ? "change" : ""}`}>

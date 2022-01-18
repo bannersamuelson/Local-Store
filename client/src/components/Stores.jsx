@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
-import axios from 'axios';
+import { useNavigate, Link } from "react-router-dom";
 import api from '../services/apiConfig';
-import newApi from '../services/apiConfig2'
 
 
 
@@ -10,8 +8,6 @@ export default function Stores(props) {
 
   const [stores, setStores] = useState([])
   const [filter, setFilter] = useState([])
-  const [area, setArea] = useState("")
-  const navigate = useNavigate()
 
   useEffect(() => {
     handleFilter();
@@ -28,14 +24,6 @@ export default function Stores(props) {
     getStores()
   }, [])
 
-  const handleFilter = () => {
-    let storeFilter = stores.filter(store => {
-      if (store.fields.area === props.area) {
-        return store
-      }
-    })
-    setFilter(storeFilter);
-  }
 
   return (
     <div>
