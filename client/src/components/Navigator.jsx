@@ -12,11 +12,6 @@ export default function Navigator(props) {
   const navigate = useNavigate()
 
 
-
-  useEffect(() => {
-    handleFilter();
-  }, [props.area, stores])
-
   return (
     <div className="bg-white-900 h-8 my-8">
       <div className="bg-transparent p-0">

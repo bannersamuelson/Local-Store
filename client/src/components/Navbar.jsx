@@ -10,10 +10,6 @@ export default function Navbar(props) {
   const [isActive, setActive] = useState(false);
 
 
-  useEffect(() => {
-    handleFilter();
-  }, [props.area, stores])
-
   const handleToggle = () => {
     setNavbarOpen(prevToggle => !prevToggle)
     setActive(!isActive);

@@ -18,7 +18,6 @@ export default function Va(props) {
       const res = await api.get()
       console.log(res.data.records)
       setStores(res.data.records);
-      setFilter(res.data.records)
     }
     getStores()
   }, [])

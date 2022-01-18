@@ -17,7 +17,6 @@ export default function Dc(props) {
       const res = await api.get()
       console.log(res.data.records)
       setStores(res.data.records);
-      setFilter(res.data.records)
     }
     getStores()
   }, [])
