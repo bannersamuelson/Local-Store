@@ -30,7 +30,7 @@ export default function Dc(props) {
 
     <div className="bg-stone-800">
       <Navigator />
-      <div className="w-full p-10 grid grid-cols-3 gap-4">
+      <div className=" md:grid-cols-3 w-full p-10 grid grid-cols-1 gap-4">
 
         <div className="w-full">
           <div className="flex flex-wrap justify-center">
@@ -73,8 +73,8 @@ export default function Dc(props) {
             if (store.fields.area === "DC") {
               return (
                 <div>
-                  <div>
-                    <div className="flex items-center p-5 h-30 content-center m-10 rounded bg-neutral-600" key={store.id}>
+                  <div className="flex items-center p-5 h-30 content-center m-10 rounded bg-neutral-600">
+                    <div className="sm:flex content-center m-10 rounded bg-neutral-600" key={store.id}>
                       <Link className="" to={`/store/${store.id}`}><img
                         style={{ width: "300px" }}
                         src={store.fields.storeImg}

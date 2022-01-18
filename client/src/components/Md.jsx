@@ -28,7 +28,7 @@ export default function Dc(props) {
 
     <div className="bg-stone-800">
       <Navigator />
-      <div className="w-full p-10 grid grid-cols-3 gap-4">
+      <div className="md:grid-cols-3 w-full p-10 grid grid-cols-1 gap-4">
 
         <div className="w-full">
           <div className="flex flex-wrap justify-center">

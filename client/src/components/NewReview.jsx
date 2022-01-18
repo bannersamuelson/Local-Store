@@ -34,13 +34,13 @@ export default function NewReview() {
 
   return (
     <div>
-      Add a Review
       <Form
         input={input}
         handleTextInput={handleTextInput}
         handleSubmit={handleSubmit}
-        type={"Create"}
+        type={"PUBLISH"}
       />
+
     </div>
   )
 }

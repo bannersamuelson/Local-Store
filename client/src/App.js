@@ -1,7 +1,6 @@
 import Navbar from './components/Navbar';
 import { useNavigate, Routes, Route, Link, Navigate } from "react-router-dom";
 import Stores from './components/Stores';
-import Navigator from './components/Navigator';
 import StoreDetail from './components/StoreDetail';
 import Spotlight from './components/Spotlight';
 import { useState } from 'react';

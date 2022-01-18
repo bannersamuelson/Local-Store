@@ -34,13 +34,15 @@ export default function StoreDetail() {
           src={store.fields.storeImg}
           alt={store.fields.storeName}
         /></a>
-        <h3>{store.fields.storeName}</h3>
-        <h5 className="flex">{store.fields.storeDescription}</h5>
-        <p>Address: {store.fields.storeAddress}</p>
-        <div className="bg-neutral-900 my-8 p-2 text-slate-50">
-          <a href={store.fields.urlAddress} target='_blank'>Company Website</a>
+        <div className="p-5">
+          <h1>{store.fields.storeName}</h1>
+          <h5 className="flex">{store.fields.storeDescription}</h5>
+          <p>Address: {store.fields.storeAddress}</p>
+          <br />
+          <a className="bg-neutral-900 my-8 p-3 text-slate-50" href={store.fields.urlAddress} target='_blank'>Company Website</a>
+
         </div>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }

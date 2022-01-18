@@ -39,27 +39,10 @@ export default function Stores(props) {
 
   return (
     <div>
-      <div className="p-0">
-
-        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
-          onClick={() => {
-            props.setArea("DC")
-          }}>Washington, DC</button>
-        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
-          onClick={() => {
-            props.setArea("MD")
-          }}>Maryland</button>
-        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700"
-          onClick={() => {
-            props.setArea("VA")
-          }}>Virginia</button>
-        <button className="text-white bg-gray-800 hover:bg-gray-900 focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-2.5 text-center mr-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-800 dark:border-gray-700" onClick={() => setFilter(stores)}>View All</button>
-      </div>
-
       {filter.map((store) => {
         return (
           <div>
-            <div className="m-10 rounded bg-white" key={store.id}>
+            <div className="md:flex m-10 rounded bg-white" key={store.id}>
               <Link to={`/store/${store.id}`}><img
                 style={{ width: "300px" }}
                 src={store.fields.storeImg}
