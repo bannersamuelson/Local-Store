@@ -1,10 +1,7 @@
-# nearby-clothing-app
+# Shop-Local
 Title Shop Local
 # Description
-I am going to create a website application that sells small business clothing items.
-You will be able to shop by store / or by clothing item
-Owners will be able to request item updates
-Simple design to encourage supporting local businesses.
+The website will be designed to assist local businesses to get more customers. It will have locations and suggestions of popular spots to visit.
 # Title
 Shop Local
 ## Project Description
@@ -19,15 +16,15 @@ API snipet
 ```https://api.airtable.com/v0/appMaXhDVdlIdtk6z/clothing```
 ### MVP
 - Different local areas will be populated
-- List of clothing items per area
-- a details page for each clothing item
-- a add to cart feature for each item
-- checkout page
+- Top 10 lists
+- DC MD VA areas to search for stores
+- Easy to use functionality
+
 #### PostMVP  
-- figure out how to use actual gps data
 - add a search by area code feature
 - add different sections that are searchable by
 - about us for each business section
+- 
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
