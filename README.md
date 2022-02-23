@@ -40,21 +40,21 @@ API snipet
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested |
 | --- | :---: |  :---: | :---: |
-| Working with Airtable | H | 3 hrs| -- |
-| Adding HTML and tailwind CSS for stying | M | 3 hrs | -- |
-| Nav bar | L | 1 hrs | -- |
-| Search bar input JS | M | 3 hrs | -- |
-| Display item information | M | 3 hrs | -- |
-| Page scroll functionality | L | 1.5 hrs | -- |
-| CSS Detail Page Styling| M | 2 hrs | -- |
-| User zipcode display | H | 3 hrs | -- |
-| store list | M | 3 hrs | -- |
-| clothing list| M | 3 hrs | -- |
-| Media Query Styling | H | 3 hrs| -- |
-| Background imaging | L | 2 hrs | -- |
-| Debugging | M | 3 hours | -- |
-| react styling components | H | 3 hrs | -- |
-| Total | 38 | -- |
+| Working with Airtable | H | 3 hrs| 3 |
+| Adding HTML and tailwind CSS for stying | M | 3 hrs | 3 |
+| Nav bar | L | 1 hrs | 2 |
+| Search bar input JS | M | 3 hrs | 3 |
+| Display item information | M | 3 hrs | 3 |
+| Page scroll functionality | L | 1.5 hrs | 1.5 |
+| CSS Detail Page Styling| M | 2 hrs | 2 |
+| User zipcode display | H | 3 hrs | 3 |
+| store list | M | 3 hrs | 3 |
+| clothing list| M | 3 hrs | 3 |
+| Media Query Styling | H | 3 hrs| 3 |
+| Background imaging | L | 2 hrs | 3 |
+| Debugging | M | 3 hours | 3 |
+| react styling components | H | 3 hrs | 3 |
+| Total | 38 | 40 |
 <!-- CODE SNIPPET I'M PROUD OF -->
 ## SWOT
 S - strengths being able to style the webpage effectively to make a good user experience
