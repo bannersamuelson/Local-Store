@@ -43,8 +43,6 @@ export default function Navbar(props) {
             <li>
               <Link to='/store/va'>VA</Link>
             </li>
-
-
             <li><Link to='/reviews' onClick={handleToggle}>User Reviews</Link></li>
           </ul>
 
