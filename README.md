@@ -1,10 +1,7 @@
-# nearby-clothing-app
-Title Shop Local
+# Shop-Local
+Title Shop Local Deployed site: [Here](https://pensive-stonebraker-9e126d.netlify.app/)
 # Description
-I am going to create a website application that sells small business clothing items.
-You will be able to shop by store / or by clothing item
-Owners will be able to request item updates
-Simple design to encourage supporting local businesses.
+The website will be designed to assist local businesses to get more customers. It will have locations and suggestions of popular spots to visit.
 # Title
 Shop Local
 ## Project Description
@@ -19,15 +16,15 @@ API snipet
 ```https://api.airtable.com/v0/appMaXhDVdlIdtk6z/clothing```
 ### MVP
 - Different local areas will be populated
-- List of clothing items per area
-- a details page for each clothing item
-- a add to cart feature for each item
-- checkout page
+- Top 10 lists
+- DC MD VA areas to search for stores
+- Easy to use functionality
+
 #### PostMVP  
-- figure out how to use actual gps data
 - add a search by area code feature
 - add different sections that are searchable by
 - about us for each business section
+- 
 ## Project Schedule
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -43,21 +40,21 @@ API snipet
 ## Timeframes
 | Component | Priority | Estimated Time | Time Invested |
 | --- | :---: |  :---: | :---: |
-| Working with Airtable | H | 3 hrs| -- |
-| Adding HTML and tailwind CSS for stying | M | 3 hrs | -- |
-| Nav bar | L | 1 hrs | -- |
-| Search bar input JS | M | 3 hrs | -- |
-| Display item information | M | 3 hrs | -- |
-| Page scroll functionality | L | 1.5 hrs | -- |
-| CSS Detail Page Styling| M | 2 hrs | -- |
-| User zipcode display | H | 3 hrs | -- |
-| store list | M | 3 hrs | -- |
-| clothing list| M | 3 hrs | -- |
-| Media Query Styling | H | 3 hrs| -- |
-| Background imaging | L | 2 hrs | -- |
-| Debugging | M | 3 hours | -- |
-| react styling components | H | 3 hrs | -- |
-| Total | 38 | -- |
+| Working with Airtable | H | 3 hrs| 3 |
+| Adding HTML and tailwind CSS for stying | M | 3 hrs | 3 |
+| Nav bar | L | 1 hrs | 2 |
+| Search bar input JS | M | 3 hrs | 3 |
+| Display item information | M | 3 hrs | 3 |
+| Page scroll functionality | L | 1.5 hrs | 1.5 |
+| CSS Detail Page Styling| M | 2 hrs | 2 |
+| User zipcode display | H | 3 hrs | 3 |
+| store list | M | 3 hrs | 3 |
+| clothing list| M | 3 hrs | 3 |
+| Media Query Styling | H | 3 hrs| 3 |
+| Background imaging | L | 2 hrs | 3 |
+| Debugging | M | 3 hours | 3 |
+| react styling components | H | 3 hrs | 3 |
+| Total | 38 | 40 |
 <!-- CODE SNIPPET I'M PROUD OF -->
 ## SWOT
 S - strengths being able to style the webpage effectively to make a good user experience
