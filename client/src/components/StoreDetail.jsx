@@ -34,7 +34,7 @@ export default function StoreDetail() {
           src={store.fields.storeImg}
           alt={store.fields.storeName}
         /></a>
-        <div className="p-5">
+        <div className="p-5 text-slate-50">
           <h1>{store.fields.storeName}</h1>
           <h5 className="flex">{store.fields.storeDescription}</h5>
           <p>Address: {store.fields.storeAddress}</p>

@@ -66,8 +66,8 @@ export default function Dc(props) {
             if (store.fields.area === "MD") {
               return (
                 <div>
-                  <div>
-                    <div className="flex justify-center items-center p-5 h-30 content-center m-10 rounded bg-neutral-600" key={store.id}>
+                  <div className="flex items-center p-5 h-30 content-center m-10 rounded bg-neutral-600">
+                    <div className="sm:flex content-center m-10 rounded bg-neutral-600" key={store.id}>
                       <Link className="" to={`/store/${store.id}`}><img
                         className="max-w-xs h-100 md:h-200"
                         src={store.fields.storeImg}
