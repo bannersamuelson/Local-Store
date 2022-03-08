@@ -69,11 +69,11 @@ export default function Dc(props) {
                   <div>
                     <div className="flex justify-center items-center p-5 h-30 content-center m-10 rounded bg-neutral-600" key={store.id}>
                       <Link className="" to={`/store/${store.id}`}><img
-                        style={{ width: "300px" }}
+                        className="max-w-xs h-100 md:h-200"
                         src={store.fields.storeImg}
                         alt={store.fields.storeName}
                       /></Link>
-                      <div className="m-5"><h5 className="justify-center items-center text-xl">{store.fields.storeDescription}</h5>
+                      <div className="m-5"><h5 className="justify-center items-center text-xl text-slate-50">{store.fields.storeDescription}</h5>
                         <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to={`/store/${store.id}`}><button>View More</button></Link>
                       </div>
                     </div>
