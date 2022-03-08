@@ -68,14 +68,14 @@ export default function Dc(props) {
             if (store.fields.area === "DC") {
               return (
                 <div>
-                  <div className="flex items-center p-5 h-30 content-center m-10 rounded bg-neutral-600">
+                  <div className="flex items-center p-5 h-30 content-center m-10 rounded bg-slate-50">
                     <div className="sm:flex content-center m-10 rounded bg-neutral-600" key={store.id}>
                       <Link to={`/store/${store.id}`}><img
-                        style={{ width: "300px" }}
+                        className="max-w-sm h-200"
                         src={store.fields.storeImg}
                         alt={store.fields.storeName}
                       /></Link>
-                      <div className="m-5"><h5 className="justify-center items-center text-xl">{store.fields.storeDescription}</h5>
+                      <div className="bg-slate-50 p-5"><h5 className="justify-center items-center text-xl">{store.fields.storeDescription}</h5>
                         <Link className="m-5 inline-block bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded items-center" to={`/store/${store.id}`}><button>View More</button></Link>
                       </div>
                     </div>
